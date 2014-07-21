@@ -1,2 +1,4 @@
 .gradle
+eclipse/assets/logs/*
 eclipse/logs/*
+out/*
