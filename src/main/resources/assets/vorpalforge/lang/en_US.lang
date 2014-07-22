@@ -1,12 +1,21 @@
-item.VorpalForge:mundane_matter.name=Mundane Matter
-item.VorpalForge:crude_matter.name=Crude Matter
-item.VorpalForge:raw_matter.name=Raw Matter
-item.VorpalForge:compacted_matter.name=Compacted Matter
-item.VorpalForge:gem_matter.name=Gem Matter
-item.VorpalForge:energetic_matter.name=Energetic Matter
-item.VorpalForge:subvorpal_matter.name=Subvorpal Matter
-item.VorpalForge:vorpal_matter.name=Vorpal Matter
+tile.VorpalForge:calcinator.name=VF Calcinator
+tile.VorpalForge:etna.name=VF Etna
+tile.VorpalForge:gauntlet.name=VF Gauntlet
+tile.VorpalForge:kiln.name=VF Kiln
+tile.VorpalForge:liquefactor.name=VF Liquefactor
+tile.VorpalForge:press.name=VF Press
+tile.VorpalForge:rectifier.name=VF Rectifier
+tile.VorpalForge:sieve.name=VF Sieve
+tile.VorpalForge:smithy.name=VF Smithy
 
 item.VorpalForge:subvorpal_ingot.name=Subvorpal Ingot
 item.VorpalForge:vorpal_ingot.name=Vorpal Ingot
 
+item.VorpalForge:compacted_matter.name=Compacted Matter
+item.VorpalForge:crude_matter.name=Crude Matter
+item.VorpalForge:energetic_matter.name=Energetic Matter
+item.VorpalForge:gem_matter.name=Gem Matter
+item.VorpalForge:mundane_matter.name=Mundane Matter
+item.VorpalForge:raw_matter.name=Raw Matter
+item.VorpalForge:subvorpal_matter.name=Subvorpal Matter
+item.VorpalForge:vorpal_matter.name=Vorpal Matter

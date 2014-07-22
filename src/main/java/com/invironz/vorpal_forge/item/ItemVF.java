@@ -30,12 +30,16 @@ public abstract class ItemVF extends Item
     @SideOnly(Side.CLIENT)
     public void registerIcons(IIconRegister iconRegister)
     {
-        String unlocalizedName = getUnlocalizedName();
-        itemIcon = iconRegister.registerIcon(unlocalizedName.substring(unlocalizedName.indexOf(".") + 1));
+        itemIcon = iconRegister.registerIcon(getUnwrappedUnlocalizedName());
     }
 
     protected String getUnwrappedUnlocalizedName(String unlocalizedName)
     {
         return unlocalizedName.substring(unlocalizedName.indexOf(".") + 1);
+    }
+
+    protected String getUnwrappedUnlocalizedName()
+    {
+        return getUnwrappedUnlocalizedName(getUnlocalizedName());
     }
 }
