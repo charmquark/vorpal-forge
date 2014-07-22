@@ -1,0 +1,26 @@
+[
+    {
+        "modid":        "VorpalForge",
+        "name":          "Vorpal Forge",
+        "description":  "Vorpal forge and vorpal gear crafting.",
+        "version":      "1.0",
+        "mcversion":    "1.7.10",
+        "url":          "",
+        "updateUrl":    "",
+
+        "authorList": [
+            "charmquark"
+        ],
+
+        "credits":      "",
+        "logoFile":     "",
+
+        "screenshots": [
+        ],
+
+        "parent":       "",
+
+        "dependencies": [
+        ]
+    }
+]
