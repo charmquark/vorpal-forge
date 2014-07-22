@@ -14,11 +14,5 @@ public class CreativeTabVF
         {
             return VFItems.vorpalIngot;
         }
-
-        @Override
-        public String getTranslatedTabLabel()
-        {
-            return Reference.MOD_NAME;
-        }
     };
 }
