@@ -1,14 +1,16 @@
 package com.invironz.vorpal_forge;
 
+import com.invironz.vorpal_forge.handler.ConfigurationHandler;
 import com.invironz.vorpal_forge.proxy.IProxy;
 import com.invironz.vorpal_forge.reference.Reference;
+import cpw.mods.fml.common.FMLCommonHandler;
 import cpw.mods.fml.common.Mod;
 import cpw.mods.fml.common.SidedProxy;
 import cpw.mods.fml.common.event.FMLInitializationEvent;
 import cpw.mods.fml.common.event.FMLPostInitializationEvent;
 import cpw.mods.fml.common.event.FMLPreInitializationEvent;
 
-@Mod(modid = Reference.MOD_ID, name = Reference.MOD_NAME, version = Reference.VERSION)
+@Mod(modid = Reference.MOD_ID, name = Reference.MOD_NAME, version = Reference.VERSION, guiFactory = Reference.GUI_FACTORY_CLASS)
 public class VorpalForge
 {
     @Mod.Instance(Reference.MOD_ID)
@@ -20,7 +22,8 @@ public class VorpalForge
     @Mod.EventHandler
     public void preInitialization(FMLPreInitializationEvent event)
     {
-
+        ConfigurationHandler.initialize(event.getSuggestedConfigurationFile());
+        FMLCommonHandler.instance().bus().register(new ConfigurationHandler());
     }
 
     @Mod.EventHandler
