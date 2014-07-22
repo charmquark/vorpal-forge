@@ -1,0 +1,12 @@
+item.VorpalForge:mundane_matter.name=Mundane Matter
+item.VorpalForge:crude_matter.name=Crude Matter
+item.VorpalForge:raw_matter.name=Raw Matter
+item.VorpalForge:compacted_matter.name=Compacted Matter
+item.VorpalForge:gem_matter.name=Gem Matter
+item.VorpalForge:energetic_matter.name=Energetic Matter
+item.VorpalForge:subvorpal_matter.name=Subvorpal Matter
+item.VorpalForge:vorpal_matter.name=Vorpal Matter
+
+item.VorpalForge:subvorpal_ingot.name=Subvorpal Ingot
+item.VorpalForge:vorpal_ingot.name=Vorpal Ingot
+

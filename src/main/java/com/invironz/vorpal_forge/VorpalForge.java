@@ -1,6 +1,7 @@
 package com.invironz.vorpal_forge;
 
 import com.invironz.vorpal_forge.handler.ConfigurationHandler;
+import com.invironz.vorpal_forge.init.VFItems;
 import com.invironz.vorpal_forge.proxy.IProxy;
 import com.invironz.vorpal_forge.reference.Reference;
 import cpw.mods.fml.common.FMLCommonHandler;
@@ -24,6 +25,7 @@ public class VorpalForge
     {
         ConfigurationHandler.initialize(event.getSuggestedConfigurationFile());
         FMLCommonHandler.instance().bus().register(new ConfigurationHandler());
+        VFItems.initialize();
     }
 
     @Mod.EventHandler

@@ -1,4 +1,6 @@
 .gradle
+eclipse/assets/options.txt
 eclipse/assets/logs/*
+eclipse/assets/saves/*
 eclipse/logs/*
 out/*
