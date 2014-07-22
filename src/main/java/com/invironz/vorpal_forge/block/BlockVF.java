@@ -1,5 +1,6 @@
 package com.invironz.vorpal_forge.block;
 
+import com.invironz.vorpal_forge.creativetab.CreativeTabVF;
 import com.invironz.vorpal_forge.reference.Reference;
 import cpw.mods.fml.relauncher.Side;
 import cpw.mods.fml.relauncher.SideOnly;
@@ -13,6 +14,7 @@ public abstract class BlockVF extends Block
     {
         super(material);
         setBlockName(name);
+        setCreativeTab(CreativeTabVF.VF_TAB);
     }
 
     public BlockVF(String name)

@@ -5,8 +5,10 @@ import com.invironz.vorpal_forge.item.ingot.ItemVFSubvorpalIngot;
 import com.invironz.vorpal_forge.item.ingot.ItemVFVorpalIngot;
 import com.invironz.vorpal_forge.item.matter.*;
 import com.invironz.vorpal_forge.reference.Names;
+import com.invironz.vorpal_forge.reference.Reference;
 import cpw.mods.fml.common.registry.GameRegistry;
 
+@GameRegistry.ObjectHolder(Reference.MOD_ID)
 public class VFItems
 {
     public static final ItemVF subvorpalIngot = new ItemVFSubvorpalIngot();

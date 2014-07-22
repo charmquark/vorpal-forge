@@ -2,8 +2,10 @@ package com.invironz.vorpal_forge.init;
 
 import com.invironz.vorpal_forge.block.*;
 import com.invironz.vorpal_forge.reference.Names;
+import com.invironz.vorpal_forge.reference.Reference;
 import cpw.mods.fml.common.registry.GameRegistry;
 
+@GameRegistry.ObjectHolder(Reference.MOD_ID)
 public class VFBlocks
 {
     public static final BlockVF calcinator  = new BlockVFCalcinator();

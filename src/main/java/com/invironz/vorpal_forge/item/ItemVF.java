@@ -1,5 +1,6 @@
 package com.invironz.vorpal_forge.item;
 
+import com.invironz.vorpal_forge.creativetab.CreativeTabVF;
 import com.invironz.vorpal_forge.reference.Reference;
 import cpw.mods.fml.relauncher.Side;
 import cpw.mods.fml.relauncher.SideOnly;
@@ -12,6 +13,7 @@ public abstract class ItemVF extends Item
     public ItemVF()
     {
         super();
+        setCreativeTab(CreativeTabVF.VF_TAB);
     }
 
     @Override
