@@ -34,5 +34,12 @@ public class Names
             public static final String SUBVORPAL    = "subvorpal_matter";
             public static final String VORPAL       =    "vorpal_matter";
         }
+
+        public static final class Tool
+        {
+            public static final String HAMMER   = "hammer";
+        }
+
+        public static final String GRINDER  = "grinder";
     }
 }

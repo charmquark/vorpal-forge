@@ -10,6 +10,10 @@ item.VorpalForge:raw_matter.name=Raw Matter
 item.VorpalForge:subvorpal_matter.name=Subvorpal Matter
 item.VorpalForge:vorpal_matter.name=Vorpal Matter
 
+item.VorpalForge:hammer.name=VF Hammer
+
+item.VorpalForge:grinder.name=VF Grinder
+
 itemGroup.VorpalForge=Vorpal Forge
 
 tile.VorpalForge:calcinator.name=VF Calcinator
