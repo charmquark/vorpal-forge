@@ -57,7 +57,7 @@ Vorpal Forge
                             by default, 1 pearl = 0.7 ender-energy
                             for every 1 ender-energy, produces one "ender matter"
 
-        VF Press        :: turns 1 ender matter into internal subvorpal-energy
+        VF Press        :: turns 1 "resonant matter" into internal subvorpal-energy
                             by default, 1 matter = 0.037 subvorpal-energy
                             for every 1 subvorpal-energy, produces one "subvorpal matter"
 
@@ -178,8 +178,13 @@ Vorpal Forge
 
         Energetic Matter (shapeless)
             S R -   S = Subvorpal Matter
-            G R -   R = Redstone
+            G R -   R = Redstone Dust
             - - -   G = Gem Matter
+
+        Resonant Matter (shapeless)
+            G R -   G = Glowstone Dust
+            E R -   R = Redstone Dust
+            - - -   E = Ender Matter
 
         VF Hammer
             S S S   S = Subvorpal Ingot

@@ -17,6 +17,14 @@ public class Names
 
     public static final class Item
     {
+        public static final class Armor
+        {
+            public static final String BOOTS        =      "boots";
+            public static final String CHESTPLATE   = "chestplate";
+            public static final String HELMET       =     "helmet";
+            public static final String LEGGINGS     =   "leggings";
+        }
+
         public static final class Ingot
         {
             public static final String SUBVORPAL    = "subvorpal_ingot";
@@ -27,17 +35,38 @@ public class Names
         {
             public static final String COMPACTED    = "compacted_matter";
             public static final String CRUDE        =     "crude_matter";
+            public static final String ENDER        =     "ender_matter";
             public static final String ENERGETIC    = "energetic_matter";
             public static final String GEM          =       "gem_matter";
             public static final String MUNDANE      =   "mundane_matter";
             public static final String RAW          =       "raw_matter";
+            public static final String RESONANT     =  "resonant_matter";
             public static final String SUBVORPAL    = "subvorpal_matter";
             public static final String VORPAL       =    "vorpal_matter";
         }
 
+        public static final class Part
+        {
+            public static final String AXE_HEAD     =     "axe_head";
+            public static final String BLADE        =        "blade";
+            public static final String HAFT         =         "haft";
+            public static final String HARNESS      =      "harness";
+            public static final String HILT         =         "hilt";
+            public static final String HOE_HEAD     =     "hoe_head";
+            public static final String MATTOCK_HEAD = "mattock_head";
+            public static final String PICK_HEAD    =    "pick_head";
+            public static final String SHOVEL_HEAD  =  "shovel_head";
+        }
+
         public static final class Tool
         {
-            public static final String HAMMER   = "hammer";
+            public static final String AXE          =        "axe";
+            public static final String HAMMER       =     "hammer";
+            public static final String HOE          =        "hoe";
+            public static final String MATTOCK      =    "mattock";
+            public static final String PICK         =       "pick";
+            public static final String SHOVEL       =     "shovel";
+            public static final String SWORD        =      "sword";
         }
 
         public static final String GRINDER  = "grinder";
