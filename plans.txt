@@ -10,19 +10,20 @@ Vorpal Forge
     some items
         (MATTER)
             mundane -> crude -> raw -> compacted
-            gem -> energetic -> subvorpal -> vorpal
+            gem -> energetic
+            pearl -> ender -> resonant -> subvorpal -> vorpal
         (INGOT)
             subvorpal, vorpal
 
     the machine chains
     
         VF Gauntlet     :: turns arbitrary items into internal energy
-                            by default, 1 item = 2 energy
+                            by default, 1 item = 1 energy
                             for every 1 energy, produces one "mundane matter"
                             -- input top; output bottom
 
         VF Calcinator   :: turns "mundane matter" into internal energy
-                            by default, 1 matter = 3 energy
+                            by default, 1 matter = 0.8 energy
                             for every 1 energy, produces one "crude matter"
                             -- requires fuel (anything a furnace can burn)
                             -- input top; output bottom
@@ -30,12 +31,12 @@ Vorpal Forge
             [future directions: an advanced calcinator that burns energetic matter for improved yield?]
 
         VF Sieve        :: turns "crude matter" into internal energy
-                            by default, 1 matter = 3 energy
+                            by default, 1 matter = 0.7 energy
                             for every 1 energy, produces one "raw matter"
                             -- input top; output bottom
 
         VF Press        :: turns "raw matter" into internal energy
-                            by default, 1 matter = 0.005 energy
+                            by default, 1 matter = 0.0015 energy
                             for every 1 energy, produces one "compacted matter"
                             -- input top; output bottom
 
@@ -50,8 +51,14 @@ Vorpal Forge
                             by default, 1 diamond = 1 gem-energy
                             for every 1 gem-energy, produces one "gem matter"
 
-        VF Press        :: turns 1 energetic matter into internal subvorpal-energy
-                            by default, 1 matter = 0.334 subvorpal-energy
+        ----------
+
+        VF Gauntlet     :: turns 1 ender pearl into internal ender-energy
+                            by default, 1 pearl = 0.7 ender-energy
+                            for every 1 ender-energy, produces one "ender matter"
+
+        VF Press        :: turns 1 ender matter into internal subvorpal-energy
+                            by default, 1 matter = 0.037 subvorpal-energy
                             for every 1 subvorpal-energy, produces one "subvorpal matter"
 
         ----------
@@ -63,7 +70,7 @@ Vorpal Forge
         ----------
 
         VF Kiln         :: turns subvorpal matter into internal energy
-                            by default, 1 matter = 0.334 energy
+                            by default, 1 matter = 0.14 energy
                             for every 1 energy, produces one "vorpal matter"
                             -- must be in 'high power mode'
                             -- requires three fueled Etnas
@@ -74,6 +81,7 @@ Vorpal Forge
         ----------
 
         VF Liquefactor  :: turns 1 "vorpal matter" into internal energy
+                            by default, 1 matter = 4 energy
                             also stores water
                             for every 1 energy + 100mB water, produces 100mB "vorpal slurry"
                             -- [inputs/outputs?]
@@ -86,14 +94,23 @@ Vorpal Forge
                             -- [any kind of automation options?]
                             -- will automatically pull slurry from an adjacent fluid inventory
 
-        -- Vorpal Matter [Ingot]
-            Gauntlet(diamond) -> Energetic Matter -> Press -> Kiln/Etna [-> Rectifier]
-
-        -- Subvorpal Matter [Ingot]
-            Gauntlet(diamond) -> Energetic Matter -> Press [-> Rectifier]
-
         -- Diamond
             Gauntlet -> Calcinator -> Sieve -> Press -> Kiln
+            1 diamond = theoretical 1190.476 items
+                        + 0.125 energetic matter in Etna
+
+        -- Subvorpal Matter [Ingot]
+            Gauntlet(pearl) -> Press [-> Rectifier]
+            1 subvorpal matter = theoretical 38.610 ender pearls
+                                [+ 0.25 energetic matter in Rectifier]
+
+        -- Vorpal Matter [Ingot]
+            Gauntlet(pearl) -> Press -> Kiln/Etna [-> Rectifier]
+                                 + 0.375 energetic matter in Etnas
+                                [+ 0.25 energetic matter in Rectifier]
+
+
+
 
 
 
@@ -155,55 +172,56 @@ Vorpal Forge
             B f B   B = Iron Block
                     f = Furnace
 
-        Energetic Matter
-            - S -   S = Subvorpal Matter
-            R G R   R = Redstone
-            - S -   G = Gem Matter
-
-            - R -   (alternate arrangement)
-            S G S   
-            - R -   
+        Energetic Matter (shapeless)
+            S R -   S = Subvorpal Matter
+            G R -   R = Redstone
+            - - -   G = Gem Matter
 
         VF Hammer
-            - - S   S = Subvorpal Ingot
-            S S S   
-            - - S   
+            S S S   S = Subvorpal Ingot
+            - O -   O = Obsidian
+            - O -
 
-            S - -   (alternate arrangement)
-            S S S   
-            S - -   
-
+            [future directions: an advanced hammer, with vorpal ingot head, with higher durability?]
 
     the smithy recipes
         (to craft with the smithy, you must place a hammer, and supply it with slurry)
+        (consumes 1/12 hammer durability for every crafting)
         (consumes 200mB of slurry for every crafting)
             In all recipes:
+                S = Subvorpal Ingot
                 V = Vorpal Ingot
                 O = Obsidian
                 D = Diamond
+                R = Redstone Dust
 
         Vorpal Pick Head
             V V V   
-            - - -   
+            - R -   
             - - -   
 
         Vorpal Axe Head
             V V -   
-            V - -   
+            V R -   
             - - -   
 
         Vorpal Shovel Head
             - V -   
-            - - -   
+            - R -   
             - - -   
 
         Vorpal Hoe Head (because why not :3 )
             V V -   
-            - - -   
+            - R -   
             - - -   
 
+        Vorpal Mattock Head
+            - S -
+            V V V
+            V R -
+
         Vorpal Haft
-            - - -           <-- craft in smithy with any of the tool heads to create
+            - R -           <-- craft in smithy with any of the tool heads to create
             - O -               the respective vorpal tool
             - O -   
 
@@ -213,18 +231,18 @@ Vorpal Forge
             - V -   
 
         Vorpal Hilt
-            D - D   
+            D S D   
             - O -   
             - O -   
 
         Vorpal Sword
             - B -   B = Vorpal Blade
-            - R -   R = Redstone
-            - H -   H = Vorpal Hilt
+            - R -   H = Vorpal Hilt
+            - H -   
 
         Vorpal Harness
             - - -   L = Leather
-            L V L   
+            L S L   
             - - -   
 
         Vorpal Barbute (helmet)
@@ -242,7 +260,7 @@ Vorpal Forge
             V - V   H = Harness
             V - V   
 
-        Vorpal Sabatons
+        Vorpal Sabatons (boots)
             - - -   L = Leather
             V - V   
             L - L   
