@@ -1,0 +1,265 @@
+Vorpal Forge
+
+    other mods to recognize and keep compatable with
+        buildcraft              [pipes]
+        thermal expansion       [ducts; requiring RF to power machines]
+        extra utils             [pipes]
+        (applied energistics?)  [builtin interfacing for autocrafting? except the smithy]
+
+
+    some items
+        (MATTER)
+            mundane -> crude -> raw -> compacted
+            gem -> energetic -> subvorpal -> vorpal
+        (INGOT)
+            subvorpal, vorpal
+
+    the machine chains
+    
+        VF Gauntlet     :: turns arbitrary items into internal energy
+                            by default, 1 item = 2 energy
+                            for every 1 energy, produces one "mundane matter"
+                            -- input top; output bottom
+
+        VF Calcinator   :: turns "mundane matter" into internal energy
+                            by default, 1 matter = 3 energy
+                            for every 1 energy, produces one "crude matter"
+                            -- requires fuel (anything a furnace can burn)
+                            -- input top; output bottom
+
+            [future directions: an advanced calcinator that burns energetic matter for improved yield?]
+
+        VF Sieve        :: turns "crude matter" into internal energy
+                            by default, 1 matter = 3 energy
+                            for every 1 energy, produces one "raw matter"
+                            -- input top; output bottom
+
+        VF Press        :: turns "raw matter" into internal energy
+                            by default, 1 matter = 0.005 energy
+                            for every 1 energy, produces one "compacted matter"
+                            -- input top; output bottom
+
+        VF Kiln         :: turns 1 "compacted matter" into 1 diamond
+                            -- must be in 'low power mode'
+                            -- requires at least one fueled Etna
+                            -- input sides; output top or bottom
+
+        ----------
+
+        VF Gauntlet     :: turns 1 diamond into internal gem-energy
+                            by default, 1 diamond = 1 gem-energy
+                            for every 1 gem-energy, produces one "gem matter"
+
+        VF Press        :: turns 1 energetic matter into internal subvorpal-energy
+                            by default, 1 matter = 0.334 subvorpal-energy
+                            for every 1 subvorpal-energy, produces one "subvorpal matter"
+
+        ----------
+
+        VF Rectifier    :: turns subvorpal matter into subvorpal ingot, or vorpal matter into vorpal ingot
+                            -- uses energetic matter as fuel
+                            -- input top; output sides
+
+        ----------
+
+        VF Kiln         :: turns subvorpal matter into internal energy
+                            by default, 1 matter = 0.334 energy
+                            for every 1 energy, produces one "vorpal matter"
+                            -- must be in 'high power mode'
+                            -- requires three fueled Etnas
+
+        VF Etna         :: attaches to and heats a Kiln
+                            -- uses energetic matter as fuel
+
+        ----------
+
+        VF Liquefactor  :: turns 1 "vorpal matter" into internal energy
+                            also stores water
+                            for every 1 energy + 100mB water, produces 100mB "vorpal slurry"
+                            -- [inputs/outputs?]
+                            -- will automatically pull water from an adjacent fluid inventory
+                            -- [automatically output to adjacent empty or slurry-containing fluid inventory?]
+
+        VF Smithy       :: holds up to 1 VF Hammer
+                            also stores "vorpal slurry"
+                            used for crafting advanced items
+                            -- [any kind of automation options?]
+                            -- will automatically pull slurry from an adjacent fluid inventory
+
+        -- Vorpal Matter [Ingot]
+            Gauntlet(diamond) -> Energetic Matter -> Press -> Kiln/Etna [-> Rectifier]
+
+        -- Subvorpal Matter [Ingot]
+            Gauntlet(diamond) -> Energetic Matter -> Press [-> Rectifier]
+
+        -- Diamond
+            Gauntlet -> Calcinator -> Sieve -> Press -> Kiln
+
+
+
+    the basic recipes
+
+        VF Smithy
+            V V V   V = Vorpal Matter
+            O C O   O = Obsidian
+            O O O   C = Crafting Table
+
+        VF Liquefactor
+            I I I   I = Iron
+            G - F   G = Glass
+            I I I   F = Iron Fence
+
+            I I I   (alternate arrangement)
+            F - G   
+            I I I   
+
+        VF Kiln
+            S S S   S = Subvorpal Ingot
+            S F S   F = Furnace
+            S S S   
+
+        VF Etna (used to heat kiln)
+            - - -   S = Subvorpal ingot
+            S - S   D = Diamond
+            S D S   
+
+        VF Rectifier
+            O O O   O = Obsidian
+            O F O   D = Diamond
+            O D O   F = Furnace
+
+        VF Press
+            O D O   O = Obsidian
+            D - D   D = Diamond
+            O O O   
+
+        VF Gauntlet
+            I - I   I = Iron
+            G G G   G = Gauntlet Gear
+            B F B   B = Iron Block
+                    F = Iron Fence
+
+        VF Grinder
+            - D -   D = Diamond
+            D O D   O = Obsidian
+            - D -   
+
+        VF Sieve
+            I I I   I = Iron
+            F F F   F = Iron Fence
+            I I I   
+
+        VF Calcinator
+            - I -   I = Iron
+            I F I   F = Iron Fence
+            B f B   B = Iron Block
+                    f = Furnace
+
+        Energetic Matter
+            - S -   S = Subvorpal Matter
+            R G R   R = Redstone
+            - S -   G = Gem Matter
+
+            - R -   (alternate arrangement)
+            S G S   
+            - R -   
+
+        VF Hammer
+            - - S   S = Subvorpal Ingot
+            S S S   
+            - - S   
+
+            S - -   (alternate arrangement)
+            S S S   
+            S - -   
+
+
+    the smithy recipes
+        (to craft with the smithy, you must place a hammer, and supply it with slurry)
+        (consumes 200mB of slurry for every crafting)
+            In all recipes:
+                V = Vorpal Ingot
+                O = Obsidian
+                D = Diamond
+
+        Vorpal Pick Head
+            V V V   
+            - - -   
+            - - -   
+
+        Vorpal Axe Head
+            V V -   
+            V - -   
+            - - -   
+
+        Vorpal Shovel Head
+            - V -   
+            - - -   
+            - - -   
+
+        Vorpal Hoe Head (because why not :3 )
+            V V -   
+            - - -   
+            - - -   
+
+        Vorpal Haft
+            - - -           <-- craft in smithy with any of the tool heads to create
+            - O -               the respective vorpal tool
+            - O -   
+
+        Vorpal Blade
+            - V -   
+            - V -   
+            - V -   
+
+        Vorpal Hilt
+            D - D   
+            - O -   
+            - O -   
+
+        Vorpal Sword
+            - B -   B = Vorpal Blade
+            - R -   R = Redstone
+            - H -   H = Vorpal Hilt
+
+        Vorpal Harness
+            - - -   L = Leather
+            L V L   
+            - - -   
+
+        Vorpal Barbute (helmet)
+            - V -   H = Vorpal Harness
+            V H V   
+            - - -   
+
+        Vorpal Cuirass (chestplate)
+            V - V   H = Vorpal Harness
+            V H V   
+            - V -   
+
+        Vorpal Cuisses (leggings)
+            L H L   L = Leather
+            V - V   H = Harness
+            V - V   
+
+        Vorpal Sabatons
+            - - -   L = Leather
+            V - V   
+            L - L   
+
+            - - -   
+            - - -   
+            - - -   
+
+            - - -   
+            - - -   
+            - - -   
+
+            - - -   
+            - - -   
+            - - -   
+
+            - - -   
+            - - -   
+            - - -   
+
