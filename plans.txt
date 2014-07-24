@@ -109,6 +109,10 @@ Vorpal Forge
                                  + 0.375 energetic matter in Etnas
                                 [+ 0.25 energetic matter in Rectifier]
 
+        ==========
+
+        Machines that can have more than one kind of internal energy, will reject incompatable items
+        so long as they contain any amount of a certain energy.  Shows current energy type in GUI.
 
 
 
