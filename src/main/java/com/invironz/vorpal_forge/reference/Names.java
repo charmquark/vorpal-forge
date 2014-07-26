@@ -69,6 +69,7 @@ public class Names
             public static final String SWORD        =      "sword";
         }
 
+        public static final String AGITATOR = "agitator";
         public static final String GRINDER  = "grinder";
     }
 }

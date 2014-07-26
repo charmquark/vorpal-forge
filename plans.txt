@@ -127,11 +127,12 @@ Vorpal Forge
 
         VF Liquefactor
             I I I   I = Iron
-            G - F   G = Glass
+            G A F   G = Glass Pane
             I I I   F = Iron Fence
+                    A = VF Agitator
 
             I I I   (alternate arrangement)
-            F - G   
+            F A G
             I I I   
 
         VF Kiln
@@ -156,7 +157,7 @@ Vorpal Forge
 
         VF Gauntlet
             I - I   I = Iron
-            G G G   G = Gauntlet Gear
+            G G G   G = VF Grinder
             B F B   B = Iron Block
                     F = Iron Fence
 
@@ -166,9 +167,9 @@ Vorpal Forge
             - D -   
 
         VF Sieve
-            I I I   I = Iron
+            I - I   I = Iron
             F F F   F = Iron Fence
-            I I I   
+            I - I
 
         VF Calcinator
             - I -   I = Iron
@@ -189,6 +190,11 @@ Vorpal Forge
         VF Hammer
             S S S   S = Subvorpal Ingot
             - O -   O = Obsidian
+            - O -
+
+        VF Agitator
+            D - D   D = Diamond
+            O O O   O = Obsidian
             - O -
 
             [future directions: an advanced hammer, with vorpal ingot head, with higher durability?]

@@ -12,7 +12,7 @@ public class CreativeTabVF
         @Override
         public Item getTabIconItem()
         {
-            return VFItems.vorpalIngot;
+            return VFItems.Ingot.vorpalIngot;
         }
     };
 }

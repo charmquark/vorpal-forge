@@ -1,6 +1,7 @@
 package com.invironz.vorpal_forge.init;
 
 import com.invironz.vorpal_forge.item.ItemVF;
+import com.invironz.vorpal_forge.item.ItemVFAgitator;
 import com.invironz.vorpal_forge.item.ItemVFGrinder;
 import com.invironz.vorpal_forge.item.ingot.ItemVFSubvorpalIngot;
 import com.invironz.vorpal_forge.item.ingot.ItemVFVorpalIngot;
@@ -37,10 +38,12 @@ public final class VFItems
     {
         public static final ItemVF compactedMatter  = new ItemVFCompactedMatter();
         public static final ItemVF crudeMatter      = new ItemVFCrudeMatter();
+        public static final ItemVF enderMatter      = new ItemVFEnderMatter();
         public static final ItemVF energeticMatter  = new ItemVFEnergeticMatter();
         public static final ItemVF gemMatter        = new ItemVFGemMatter();
         public static final ItemVF mundaneMatter    = new ItemVFMundaneMatter();
         public static final ItemVF rawMatter        = new ItemVFRawMatter();
+        public static final ItemVF resonantMatter   = new ItemVFResonantMatter();
         public static final ItemVF subvorpalMatter  = new ItemVFSubvorpalMatter();
         public static final ItemVF vorpalMatter     = new ItemVFVorpalMatter();
 
@@ -48,10 +51,12 @@ public final class VFItems
         {
             register(compactedMatter, Names.Item.Matter.COMPACTED);
             register(crudeMatter, Names.Item.Matter.CRUDE);
+            register(enderMatter, Names.Item.Matter.ENDER);
             register(energeticMatter, Names.Item.Matter.ENERGETIC);
             register(gemMatter, Names.Item.Matter.GEM);
             register(mundaneMatter, Names.Item.Matter.MUNDANE);
             register(rawMatter, Names.Item.Matter.RAW);
+            register(resonantMatter, Names.Item.Matter.RESONANT);
             register(subvorpalMatter, Names.Item.Matter.SUBVORPAL);
             register(vorpalMatter, Names.Item.Matter.VORPAL);
         }
@@ -105,11 +110,13 @@ public final class VFItems
         }
     }
 
+    public static final ItemVF agitator = new ItemVFAgitator();
     public static final ItemVF grinder  = new ItemVFGrinder();
 
     public static void initialize()
     {
-        register(grinder, Names.Item.GRINDER);
+        register(agitator,  Names.Item.AGITATOR);
+        register(grinder,   Names.Item.GRINDER);
 
         Armor.initialize();
         Ingot.initialize();

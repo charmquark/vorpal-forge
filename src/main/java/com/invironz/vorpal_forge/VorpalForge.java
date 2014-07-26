@@ -3,6 +3,8 @@ package com.invironz.vorpal_forge;
 import com.invironz.vorpal_forge.handler.ConfigurationHandler;
 import com.invironz.vorpal_forge.init.VFBlocks;
 import com.invironz.vorpal_forge.init.VFItems;
+import com.invironz.vorpal_forge.init.recipe.VFBlockRecipes;
+import com.invironz.vorpal_forge.init.recipe.VFItemRecipes;
 import com.invironz.vorpal_forge.proxy.IProxy;
 import com.invironz.vorpal_forge.reference.Reference;
 import cpw.mods.fml.common.FMLCommonHandler;
@@ -33,7 +35,8 @@ public class VorpalForge
     @Mod.EventHandler
     public void initialization(FMLInitializationEvent event)
     {
-
+        VFItemRecipes.initialize();
+        VFBlockRecipes.initialize();
     }
 
     @Mod.EventHandler
