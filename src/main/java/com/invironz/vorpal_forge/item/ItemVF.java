@@ -2,6 +2,7 @@ package com.invironz.vorpal_forge.item;
 
 import com.invironz.vorpal_forge.creativetab.CreativeTabVF;
 import com.invironz.vorpal_forge.reference.Reference;
+import com.invironz.vorpal_forge.utility.LocalizationHelper;
 import cpw.mods.fml.relauncher.Side;
 import cpw.mods.fml.relauncher.SideOnly;
 import net.minecraft.client.renderer.texture.IIconRegister;
@@ -19,7 +20,7 @@ public abstract class ItemVF extends Item
     @Override
     public String getUnlocalizedName()
     {
-        return String.format("item.%s:%s", Reference.MOD_ID, getUnwrappedUnlocalizedName(super.getUnlocalizedName()));
+        return LocalizationHelper.unlocalizedItemName(super.getUnlocalizedName());
     }
 
     @Override
@@ -32,16 +33,6 @@ public abstract class ItemVF extends Item
     @SideOnly(Side.CLIENT)
     public void registerIcons(IIconRegister iconRegister)
     {
-        itemIcon = iconRegister.registerIcon(getUnwrappedUnlocalizedName());
-    }
-
-    protected String getUnwrappedUnlocalizedName(String unlocalizedName)
-    {
-        return unlocalizedName.substring(unlocalizedName.indexOf(".") + 1);
-    }
-
-    protected String getUnwrappedUnlocalizedName()
-    {
-        return getUnwrappedUnlocalizedName(getUnlocalizedName());
+        itemIcon = iconRegister.registerIcon(LocalizationHelper.unwrappedUnlocalizedName(this));
     }
 }
