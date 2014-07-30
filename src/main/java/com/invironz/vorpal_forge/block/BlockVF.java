@@ -3,6 +3,7 @@ package com.invironz.vorpal_forge.block;
 import com.invironz.vorpal_forge.creativetab.CreativeTabVF;
 import com.invironz.vorpal_forge.reference.Reference;
 import com.invironz.vorpal_forge.utility.LocalizationHelper;
+import cpw.mods.fml.common.registry.GameRegistry;
 import cpw.mods.fml.relauncher.Side;
 import cpw.mods.fml.relauncher.SideOnly;
 import net.minecraft.block.Block;
@@ -27,6 +28,13 @@ public abstract class BlockVF extends Block
     public String getUnlocalizedName()
     {
         return LocalizationHelper.unlocalizedBlockName(super.getUnlocalizedName());
+    }
+
+    @Override
+    public Block setBlockName(String name)
+    {
+        GameRegistry.registerBlock(this, name);
+        return super.setBlockName(name);
     }
 
     @Override

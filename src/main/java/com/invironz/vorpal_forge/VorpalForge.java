@@ -28,8 +28,8 @@ public class VorpalForge
     {
         ConfigurationHandler.initialize(event.getSuggestedConfigurationFile());
         FMLCommonHandler.instance().bus().register(new ConfigurationHandler());
-        VFItems.initialize();
-        VFBlocks.initialize();
+        VFItems.preInitialize();
+        VFBlocks.preInitialize();
     }
 
     @Mod.EventHandler

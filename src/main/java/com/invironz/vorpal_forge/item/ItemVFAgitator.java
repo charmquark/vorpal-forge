@@ -6,8 +6,7 @@ public final class ItemVFAgitator extends ItemVF
 {
     public ItemVFAgitator()
     {
-        super();
+        super(Names.Item.AGITATOR);
         setMaxStackSize(1);
-        setUnlocalizedName(Names.Item.AGITATOR);
     }
 }

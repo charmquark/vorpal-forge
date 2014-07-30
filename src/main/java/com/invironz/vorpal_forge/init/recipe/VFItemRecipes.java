@@ -3,6 +3,7 @@ package com.invironz.vorpal_forge.init.recipe;
 import com.invironz.vorpal_forge.init.VFItems;
 import net.minecraft.block.Block;
 import net.minecraft.init.Blocks;
+import net.minecraft.item.Item;
 import net.minecraftforge.oredict.ShapedOreRecipe;
 import net.minecraftforge.oredict.ShapelessOreRecipe;
 
@@ -12,19 +13,25 @@ public final class VFItemRecipes extends VFRecipesBase
     {
         Block   obsidian    = Blocks.obsidian;
 
+        Item    agitator    = VFItems.agitator,
+                ender       = VFItems.Matter.ender,
+                energetic   = VFItems.Matter.energetic,
+                gem         = VFItems.Matter.gem,
+                grinder     = VFItems.grinder,
+                hammer      = VFItems.Tool.hammer,
+                resonant    = VFItems.Matter.resonant,
+                singot      = VFItems.Ingot.subvorpal,
+                smatter     = VFItems.Matter.subvorpal;
+
         String  diamond     = "gemDiamond",
                 glowstone   = "dustGlowstone",
                 redstone    = "dustRedstone";
 
-        // basics
-        add(new ShapedOreRecipe(VFItems.agitator,       "d d", "ooo", " o ",    'd', diamond, 'o', obsidian));
-        add(new ShapedOreRecipe(VFItems.grinder,        " d ", "dod", " d ",    'd', diamond, 'o', obsidian));
+        add(new ShapedOreRecipe(agitator,   "d d", "ooo", " o ",    'd', diamond,   'o', obsidian   ));
+        add(new ShapedOreRecipe(grinder,    " d ", "dod", " d ",    'd', diamond,   'o', obsidian   ));
+        add(new ShapedOreRecipe(hammer,     "sss", " o ", " o ",    's', singot,    'o', obsidian   ));
 
-        // matters
-        add(new ShapelessOreRecipe(VFItems.Matter.energeticMatter, VFItems.Matter.gemMatter, VFItems.Matter.subvorpalMatter, redstone, redstone));
-        add(new ShapelessOreRecipe(VFItems.Matter.resonantMatter, VFItems.Matter.enderMatter, glowstone, redstone, redstone));
-
-        //tools
-        add(new ShapedOreRecipe(VFItems.Tool.hammer,    "sss", " o ", " o ",    's', VFItems.Ingot.subvorpalIngot, 'o', obsidian));
+        add(new ShapelessOreRecipe(energetic,       gem,            smatter,        redstone,       redstone        ));
+        add(new ShapelessOreRecipe(resonant,        ender,          glowstone,      redstone,       redstone        ));
     }
 }

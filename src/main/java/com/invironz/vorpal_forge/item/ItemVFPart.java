@@ -4,8 +4,7 @@ public abstract class ItemVFPart extends ItemVF
 {
     public ItemVFPart(String name)
     {
-        super();
+        super(name);
         setMaxStackSize(1);
-        setUnlocalizedName(name);
     }
 }

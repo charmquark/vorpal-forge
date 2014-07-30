@@ -4,8 +4,7 @@ public abstract class ItemVFMatter extends ItemVF
 {
     public ItemVFMatter(String name)
     {
-        super();
+        super(name);
         setMaxStackSize(64);
-        setUnlocalizedName(name);
     }
 }

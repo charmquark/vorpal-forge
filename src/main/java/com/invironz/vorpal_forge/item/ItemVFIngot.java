@@ -4,8 +4,7 @@ public abstract class ItemVFIngot extends ItemVF
 {
     public ItemVFIngot(String name)
     {
-        super();
+        super(name);
         setMaxStackSize(1);
-        setUnlocalizedName(name);
     }
 }

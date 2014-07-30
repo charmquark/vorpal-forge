@@ -6,8 +6,7 @@ public final class ItemVFGrinder extends ItemVF
 {
     public ItemVFGrinder()
     {
-        super();
+        super(Names.Item.GRINDER);
         setMaxStackSize(1);
-        setUnlocalizedName(Names.Item.GRINDER);
     }
 }
