@@ -210,30 +210,15 @@ Vorpal Forge
                 D = Diamond
                 R = Redstone Dust
 
-        Vorpal Pick Head
-            V V V   
-            - R -   
-            - - -   
-
-        Vorpal Axe Head
-            V V -   
-            V R -   
-            - - -   
-
-        Vorpal Shovel Head
-            - V -   
-            - R -   
-            - - -   
-
-        Vorpal Hoe Head (because why not :3 )
-            V V -   
-            - R -   
-            - - -   
+        Vorpal Harvester Head
+            - V -
+            V S V
+            V R V
 
         Vorpal Mattock Head
             - S -
             V V V
-            V R -
+            - R -
 
         Vorpal Haft
             - R -           <-- craft in smithy with any of the tool heads to create

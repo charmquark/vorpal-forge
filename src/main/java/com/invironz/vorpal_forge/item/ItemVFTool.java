@@ -4,8 +4,7 @@ public abstract class ItemVFTool extends ItemVF
 {
     public ItemVFTool(String name)
     {
-        super();
+        super(name);
         setMaxStackSize(1);
-        setUnlocalizedName(name);
     }
 }

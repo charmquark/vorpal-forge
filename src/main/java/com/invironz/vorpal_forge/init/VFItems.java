@@ -65,49 +65,37 @@ public final class VFItems
 
     public static final class Part
     {
-        public static Item  axeHead,
-                            blade,
+        public static Item  blade,
                             haft,
                             harness,
+                            harvesterHead,
                             hilt,
-                            hoeHead,
-                            mattockHead,
-                            pickHead,
-                            shovelHead;
+                            mattockHead;
 
         private static void preInitialize()
         {
-            axeHead      = new ItemVFAxeHead();
-            blade        = new ItemVFBlade();
-            haft         = new ItemVFHaft();
-            harness      = new ItemVFHarness();
-            hilt         = new ItemVFHilt();
-            hoeHead      = new ItemVFHoeHead();
-            mattockHead  = new ItemVFMattockHead();
-            pickHead     = new ItemVFPickHead();
-            shovelHead   = new ItemVFShovelHead();
+            blade           = new ItemVFBlade();
+            haft            = new ItemVFHaft();
+            harness         = new ItemVFHarness();
+            harvesterHead   = new ItemVFHarvesterHead();
+            hilt            = new ItemVFHilt();
+            mattockHead     = new ItemVFMattockHead();
         }
     }
 
     public static final class Tool
     {
-        public static Item  axe,
-                            hammer,
-                            hoe,
+        public static Item  hammer,
+                            harvester,
                             mattock,
-                            pick,
-                            shovel,
                             sword;
 
         private static void preInitialize()
         {
-            axe      = new ItemVFAxe();
-            hammer   = new ItemVFHammer();
-            hoe      = new ItemVFHoe();
-            mattock  = new ItemVFMattock();
-            pick     = new ItemVFPick();
-            shovel   = new ItemVFShovel();
-            sword    = new ItemVFSword();
+            hammer      = new ItemVFHammer();
+            harvester   = new ItemVFHarvester();
+            mattock     = new ItemVFMattock();
+            sword       = new ItemVFSword();
         }
     }
 

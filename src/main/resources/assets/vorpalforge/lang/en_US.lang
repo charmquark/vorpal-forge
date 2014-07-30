@@ -28,22 +28,16 @@ item.VorpalForge:vorpal_matter.name=Vorpal Matter
 
 
 item.VorpalForge:blade.name=Vorpal Blade
-item.VorpalForge:axe_head.name=Vorpal Axe Head
 item.VorpalForge:haft.name=Vorpal Haft
 item.VorpalForge:harness.name=Vorpal Harness
+item.VorpalForge:harvester_head.name=Vorpal Harvester Head
 item.VorpalForge:hilt.name=Vorpal Hilt
-item.VorpalForge:hoe_head.name=Vorpal Hoe Head
 item.VorpalForge:mattock_head.name=Vorpal Mattock Head
-item.VorpalForge:pick_head.name=Vorpal Pick Head
-item.VorpalForge:shovel_head.name=Vorpal Shovel Head
 
 
-item.VorpalForge:axe.name=Vorpal Axe
 item.VorpalForge:hammer.name=Vorpal Hammer
-item.VorpalForge:hoe.name=Vorpal Hoe
+item.VorpalForge:harvester.name=Vorpal Harvester
 item.VorpalForge:mattock.name=Vorpal Mattock
-item.VorpalForge:pick.name=Vorpal Pick
-item.VorpalForge:shovel.name=Vorpal Shovel
 item.VorpalForge:sword.name=Vorpal Sword
 
 

@@ -47,25 +47,19 @@ public class Names
 
         public static final class Part
         {
-            public static final String AXE_HEAD     =     "axe_head";
-            public static final String BLADE        =        "blade";
-            public static final String HAFT         =         "haft";
-            public static final String HARNESS      =      "harness";
-            public static final String HILT         =         "hilt";
-            public static final String HOE_HEAD     =     "hoe_head";
-            public static final String MATTOCK_HEAD = "mattock_head";
-            public static final String PICK_HEAD    =    "pick_head";
-            public static final String SHOVEL_HEAD  =  "shovel_head";
+            public static final String BLADE            =          "blade";
+            public static final String HAFT             =           "haft";
+            public static final String HARNESS          =        "harness";
+            public static final String HARVESTER_HEAD   = "harvester_head";
+            public static final String HILT             =           "hilt";
+            public static final String MATTOCK_HEAD     =   "mattock_head";
         }
 
         public static final class Tool
         {
-            public static final String AXE          =        "axe";
             public static final String HAMMER       =     "hammer";
-            public static final String HOE          =        "hoe";
+            public static final String HARVESTER    =  "harvester";
             public static final String MATTOCK      =    "mattock";
-            public static final String PICK         =       "pick";
-            public static final String SHOVEL       =     "shovel";
             public static final String SWORD        =      "sword";
         }
 

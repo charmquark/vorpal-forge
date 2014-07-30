@@ -3,10 +3,10 @@ package com.invironz.vorpal_forge.item.tool;
 import com.invironz.vorpal_forge.item.ItemVFTool;
 import com.invironz.vorpal_forge.reference.Names;
 
-public final class ItemVFHoe extends ItemVFTool
+public final class ItemVFHarvester extends ItemVFTool
 {
-    public ItemVFHoe()
+    public ItemVFHarvester()
     {
-        super(Names.Item.Tool.HOE);
+        super(Names.Item.Tool.HARVESTER);
     }
 }
