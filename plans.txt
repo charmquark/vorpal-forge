@@ -281,3 +281,8 @@ Vorpal Forge
             - - -   
             - - -   
 
+
+"EASTER EGG" FEATURES
+
+    Mutton Bed / Meat Bed
+        (in reference to Utoxin's "Vanilla Amplified" episode 1)
