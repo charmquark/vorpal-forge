@@ -286,3 +286,18 @@ Vorpal Forge
 
     Mutton Bed / Meat Bed
         (in reference to Utoxin's "Vanilla Amplified" episode 1)
+
+
+FUTURE DIRECTIONS?
+
+    Augments    - add additional enchantment effects to vorpal gear.
+                - an example: adding flame aspect
+                    - first craft a Compressed XP Orb
+                        - using an "xp siphon" or some such to leech levels and produce the item
+                    - craft the augment
+                        - in a VF Smithy
+                        - compressed xp orb; subvorpal matter; lapis; blaze rod (this determines the enchant)
+                    - add augment to tool/weapon
+                        - using Smithy?
+                        - how to remove?
+                        - maybe add a new block, a VF Anvil sort of thing, just for this?
