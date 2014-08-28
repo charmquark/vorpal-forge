@@ -1,5 +1,8 @@
 Vorpal Forge
 
+    UPDATE SOME RECIPES (KILN FOR EXAMPLE) TO USE NETHER STARS AND SO FORTH
+    CHANGE ENERGY RATIOS; MAKE DIAMOND PRODUCTION [MUCH] LESS EFFICIENT
+
     other mods to recognize and keep compatable with
         buildcraft              [pipes]
         thermal expansion       [ducts; requiring RF to power machines]
