@@ -304,3 +304,7 @@ FUTURE DIRECTIONS?
                         - using Smithy?
                         - how to remove?
                         - maybe add a new block, a VF Anvil sort of thing, just for this?
+
+    Jabberwock
+        - flesh blocks to make the spawning ritual
+            - made from rotten flesh (using the press? or just crafting?)
