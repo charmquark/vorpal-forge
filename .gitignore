@@ -1,3 +1,4 @@
+.directory
 .gradle
 eclipse/assets/options.txt
 eclipse/assets/logs/*
