@@ -123,84 +123,10 @@ Vorpal Forge
 
     the basic recipes
 
-        VF Smithy
-            V V V   V = Vorpal Matter
-            O C O   O = Obsidian
-            O O O   C = Crafting Table
-
-        VF Liquefactor
-            I I I   I = Iron
-            G A F   G = Glass Pane
-            I I I   F = Iron Fence
-                    A = VF Agitator
-
-            I I I   (alternate arrangement)
-            F A G
-            I I I   
-
-        VF Kiln
-            S S S   S = Subvorpal Ingot
-            S F S   F = Furnace
-            S S S   
-
-        VF Etna (used to heat kiln)
-            - - -   S = Subvorpal ingot
-            S - S   D = Diamond
-            S D S   
-
-        VF Rectifier
-            O O O   O = Obsidian
-            O F O   D = Diamond
-            O D O   F = Furnace
-
-        VF Press
-            O D O   O = Obsidian
-            D - D   D = Diamond
-            O O O   
-
-        VF Gauntlet
-            I - I   I = Iron
-            G G G   G = VF Grinder
-            B F B   B = Iron Block
-                    F = Iron Fence
-
-        VF Grinder
-            - D -   D = Diamond
-            D O D   O = Obsidian
-            - D -   
-
-        VF Sieve
-            I - I   I = Iron
-            F F F   F = Iron Fence
-            I - I
-
-        VF Calcinator
-            - I -   I = Iron
-            I F I   F = Iron Fence
-            B f B   B = Iron Block
-                    f = Furnace
-
-        Energetic Matter (shapeless)
-            S R -   S = Subvorpal Matter
-            G R -   R = Redstone Dust
-            - - -   G = Gem Matter
-
-        Resonant Matter (shapeless)
-            G R -   G = Glowstone Dust
-            E R -   R = Redstone Dust
-            - - -   E = Ender Matter
-
-        VF Hammer
-            S S S   S = Subvorpal Ingot
-            - O -   O = Obsidian
-            - O -
-
-        VF Agitator
-            D - D   D = Diamond
-            O O O   O = Obsidian
-            - O -
-
             [future directions: an advanced hammer, with vorpal ingot head, with higher durability?]
+
+            [modify the recipes to follow a 'tiered' pattern?
+                iron -> obsidian -> subvorpal]
 
     the smithy recipes
         (to craft with the smithy, you must place a hammer, and supply it with slurry)

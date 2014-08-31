@@ -2,6 +2,7 @@ itemGroup.VorpalForge=Vorpal Forge
 
 
 item.VorpalForge:agitator.name=VF Agitator
+item.VorpalForge:convector.name=VF Convector
 item.VorpalForge:grinder.name=VF Grinder
 
 

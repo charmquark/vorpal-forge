@@ -1,6 +1,7 @@
 package com.invironz.vorpal_forge.init;
 
 import com.invironz.vorpal_forge.item.ItemVFAgitator;
+import com.invironz.vorpal_forge.item.ItemVFConvector;
 import com.invironz.vorpal_forge.item.ItemVFGrinder;
 import com.invironz.vorpal_forge.item.ItemVFMatter;
 import com.invironz.vorpal_forge.item.ingot.ItemVFSubvorpalIngot;
@@ -100,12 +101,14 @@ public final class VFItems
     }
 
     public static Item  agitator,
+                        convector,
                         grinder,
                         matter;
 
     public static void preInitialize()
     {
         agitator    = new ItemVFAgitator();
+        convector   = new ItemVFConvector();
         grinder     = new ItemVFGrinder();
         matter      = new ItemVFMatter();
 

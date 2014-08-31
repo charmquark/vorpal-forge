@@ -63,9 +63,10 @@ public class Names
             public static final String SWORD        =      "sword";
         }
 
-        public static final String AGITATOR = "agitator";
-        public static final String GRINDER  = "grinder";
-        public static final String MATTER   = "matter";
+        public static final String AGITATOR     = "agitator";
+        public static final String CONVECTOR    = "convector";
+        public static final String GRINDER      = "grinder";
+        public static final String MATTER       = "matter";
 
         public static final String[] MATTER_SUBS = new String[] {
                 "compacted",

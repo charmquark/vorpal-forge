@@ -14,26 +14,23 @@ public final class VFItemRecipes extends VFRecipesBase
     {
         Block       obsidian    = Blocks.obsidian;
 
-        Item        agitator    = VFItems.agitator,
-                    grinder     = VFItems.grinder,
-                    hammer      = VFItems.Tool.hammer,
-                    singot      = VFItems.Ingot.subvorpal;
+        Item        singot      = VFItems.Ingot.subvorpal;
 
         ItemStack   ender       = VFItems.Matter.ender,
-                    energetic   = VFItems.Matter.energetic,
                     gem         = VFItems.Matter.gem,
-                    resonant    = VFItems.Matter.resonant,
                     smatter     = VFItems.Matter.subvorpal;
 
         String      diamond     = "gemDiamond",
-                    glowstone   = "dustGlowstone",
+                    iron        = "ingotIron",
                     redstone    = "dustRedstone";
 
-        add(new ShapedOreRecipe(agitator,   "d d", "ooo", " o ",    'd', diamond,   'o', obsidian   ));
-        add(new ShapedOreRecipe(grinder,    " d ", "dod", " d ",    'd', diamond,   'o', obsidian   ));
-        add(new ShapedOreRecipe(hammer,     "sss", " o ", " o ",    's', singot,    'o', obsidian   ));
+        add(new ShapedOreRecipe(VFItems.agitator,       "d d", "ooo", " o ",    'd', diamond,   'o', obsidian                   ));
+        add(new ShapedOreRecipe(VFItems.convector,      "idi", "isi", "iii",    'd', diamond,   'i', iron,      's', smatter    ));
+        add(new ShapedOreRecipe(VFItems.grinder,        " d ", "dod", " d ",    'd', diamond,   'o', obsidian                   ));
 
-        add(new ShapelessOreRecipe(energetic,       gem,            smatter,        redstone,       redstone        ));
-        add(new ShapelessOreRecipe(resonant,        ender,          glowstone,      redstone,       redstone        ));
+        add(new ShapedOreRecipe(VFItems.Tool.hammer,    "sss", " o ", " o ",    's', singot,    'o', obsidian                   ));
+
+        add(new ShapelessOreRecipe(VFItems.Matter.energetic,    gem,            redstone,       redstone        ));
+        add(new ShapelessOreRecipe(VFItems.Matter.resonant,     ender,          redstone,       redstone        ));
     }
 }
