@@ -1,17 +1,17 @@
 package com.invironz.vorpal_forge.init;
 
-import com.invironz.vorpal_forge.item.ItemVF;
 import com.invironz.vorpal_forge.item.ItemVFAgitator;
 import com.invironz.vorpal_forge.item.ItemVFGrinder;
+import com.invironz.vorpal_forge.item.ItemVFMatter;
 import com.invironz.vorpal_forge.item.ingot.ItemVFSubvorpalIngot;
 import com.invironz.vorpal_forge.item.ingot.ItemVFVorpalIngot;
-import com.invironz.vorpal_forge.item.matter.*;
 import com.invironz.vorpal_forge.item.part.*;
-import com.invironz.vorpal_forge.item.tool.*;
-import com.invironz.vorpal_forge.reference.Names;
-import com.invironz.vorpal_forge.reference.Reference;
-import cpw.mods.fml.common.registry.GameRegistry;
+import com.invironz.vorpal_forge.item.tool.ItemVFHammer;
+import com.invironz.vorpal_forge.item.tool.ItemVFHarvester;
+import com.invironz.vorpal_forge.item.tool.ItemVFMattock;
+import com.invironz.vorpal_forge.item.tool.ItemVFSword;
 import net.minecraft.item.Item;
+import net.minecraft.item.ItemStack;
 
 public final class VFItems
 {
@@ -37,29 +37,29 @@ public final class VFItems
 
     public static final class Matter
     {
-        public static Item  compacted,
-                            crude,
-                            ender,
-                            energetic,
-                            gem,
-                            mundane,
-                            raw,
-                            resonant,
-                            subvorpal,
-                            vorpal;
+        public static ItemStack compacted,
+                                crude,
+                                ender,
+                                energetic,
+                                gem,
+                                mundane,
+                                raw,
+                                resonant,
+                                subvorpal,
+                                vorpal;
 
         private static void preInitialize()
         {
-            compacted   = new ItemVFCompactedMatter();
-            crude       = new ItemVFCrudeMatter();
-            ender       = new ItemVFEnderMatter();
-            energetic   = new ItemVFEnergeticMatter();
-            gem         = new ItemVFGemMatter();
-            mundane     = new ItemVFMundaneMatter();
-            raw         = new ItemVFRawMatter();
-            resonant    = new ItemVFResonantMatter();
-            subvorpal   = new ItemVFSubvorpalMatter();
-            vorpal      = new ItemVFVorpalMatter();
+            compacted   = new ItemStack(matter, 1, ItemVFMatter.SubType.COMPACTED);
+            crude       = new ItemStack(matter, 1, ItemVFMatter.SubType.CRUDE);
+            ender       = new ItemStack(matter, 1, ItemVFMatter.SubType.ENDER);
+            energetic   = new ItemStack(matter, 1, ItemVFMatter.SubType.ENERGETIC);
+            gem         = new ItemStack(matter, 1, ItemVFMatter.SubType.GEM);
+            mundane     = new ItemStack(matter, 1, ItemVFMatter.SubType.MUNDANE);
+            raw         = new ItemStack(matter, 1, ItemVFMatter.SubType.RAW);
+            resonant    = new ItemStack(matter, 1, ItemVFMatter.SubType.RESONANT);
+            subvorpal   = new ItemStack(matter, 1, ItemVFMatter.SubType.SUBVORPAL);
+            vorpal      = new ItemStack(matter, 1, ItemVFMatter.SubType.VORPAL);
         }
     }
 
@@ -100,12 +100,14 @@ public final class VFItems
     }
 
     public static Item  agitator,
-                        grinder;
+                        grinder,
+                        matter;
 
     public static void preInitialize()
     {
         agitator    = new ItemVFAgitator();
         grinder     = new ItemVFGrinder();
+        matter      = new ItemVFMatter();
 
         Armor.preInitialize();
         Ingot.preInitialize();

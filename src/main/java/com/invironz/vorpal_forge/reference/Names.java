@@ -65,5 +65,23 @@ public class Names
 
         public static final String AGITATOR = "agitator";
         public static final String GRINDER  = "grinder";
+        public static final String MATTER   = "matter";
+
+        public static final String[] MATTER_SUBS = new String[] {
+                "compacted",
+                "crude",
+                "ender",
+                "energetic",
+                "gem",
+                "mundane",
+                "raw",
+                "resonant",
+                "subvorpal",
+                "vorpal"
+        };
+
+        public static String getMatter(int i) {
+            return MATTER_SUBS[i] + "_" + MATTER;
+        }
     }
 }

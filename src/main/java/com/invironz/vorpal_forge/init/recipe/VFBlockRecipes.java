@@ -7,6 +7,7 @@ import net.minecraft.block.Block;
 import net.minecraft.init.Blocks;
 import net.minecraft.init.Items;
 import net.minecraft.item.Item;
+import net.minecraft.item.ItemStack;
 import net.minecraft.item.crafting.IRecipe;
 import net.minecraftforge.oredict.ShapedOreRecipe;
 
@@ -14,21 +15,21 @@ public class VFBlockRecipes extends VFRecipesBase
 {
     public static void initialize()
     {
-        Block   ctable      = Blocks.crafting_table,
-                furnace     = Blocks.furnace,
-                ironBars    = Blocks.iron_bars,
-                obsidian    = Blocks.obsidian;
+        Block       ctable      = Blocks.crafting_table,
+                    furnace     = Blocks.furnace,
+                    ironBars    = Blocks.iron_bars,
+                    obsidian    = Blocks.obsidian;
 
-        Item    agitator    = VFItems.agitator,
-                grinder     = VFItems.grinder,
-                singot      = VFItems.Ingot.subvorpal,
-                vingot      = VFItems.Ingot.vorpal,
-                vmatter     = VFItems.Matter.vorpal;
+        Item        agitator    = VFItems.agitator,
+                    grinder     = VFItems.grinder,
+                    singot      = VFItems.Ingot.subvorpal;
 
-        String  diamond     = "gemDiamond",
-                glassPane   = "paneGlass",
-                iron        = "ingotIron",
-                ironBlock   = "blockIron";
+        ItemStack   vmatter     = VFItems.Matter.vorpal;
+
+        String      diamond     = "gemDiamond",
+                    glassPane   = "paneGlass",
+                    iron        = "ingotIron",
+                    ironBlock   = "blockIron";
 
         add(new ShapedOreRecipe(VFBlocks.calcinator,            " i ", "iri", "bfb",    'i', iron,      'r', ironBars,  'b', ironBlock, 'f', furnace    ));
         add(new ShapedOreRecipe(VFBlocks.etna,                  "   ", "s s", "sds",    's', singot,    'd', diamond                                    ));
