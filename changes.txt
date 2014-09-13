@@ -1,0 +1,87 @@
+
+VF Casing
+[item vf_materials:0]
+    oio     i = Iron Ingot
+    ioi     o = Obsidian
+    oio
+
+VF Grinder
+[item vf_materials:1]
+     d      d = Diamond
+    dod     o = Obsidian
+     d
+
+VF Gauntlet (shapeless)
+    VF Casing
+    VF Grinder
+
+VF Sieve (shapeless)
+    VF Casing
+    Iron Bars (x3)
+
+VF Calcinator (shapeless)
+[block vf_calcinator:0]
+    VF Casing
+    Furnace
+
+VF Press
+     p      c = VF Casing
+    pcp     p = Piston
+     p
+
+VF Convector
+[item vf_materials:2]
+    odo     d = Diamond
+    sss     i = Iron Ingot
+    oio     o = Obsidian
+            s = Subvorpal Matter
+
+VF Rectifier (shapeless)
+    VF Casing
+    VF Convector
+
+VF Advanced Casing
+[item vf_materials:3]
+    oso     o = Obsidian
+    s s     s = Subvorpal Ingot
+    oso
+
+VF Reaction Core (shapeless)
+[item vf_materials:4]
+    Emerald
+    Nether Star
+    Subvorpal Matter
+
+VF Kiln (shapeless)
+[block vf_kiln:0]
+    VF Advanced Casing
+    VF Reaction Core
+
+VF Etna
+    ---
+    s-s     r = VF Convector
+    srs     s = Subvorpal Ingot
+
+VF Kiln (shapeless)
+[block vf_kiln:1]
+(this is the kiln with more than a few uses)
+    VF Kiln [block vf_kiln:0]
+    Vorpal Star
+
+VF Agitator
+[item vf_materials:5]
+    d d     d = Diamond
+    ooo     o = Obsidian
+     o 
+
+VF Liquefactor (shapeless)
+    VF Advanced Casing
+    VF Agitator
+    Glass
+    Piston
+
+VF Smithy (shapeless)
+    VF Advanced Casing
+    Crafting Table
+    Glass
+    Piston
